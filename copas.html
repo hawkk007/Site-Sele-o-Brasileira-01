@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>As 5 Copas — Canarinho 5★</title>
+<meta name="description" content="As cinco conquistas mundiais da Seleção Brasileira: Suécia 1958, Chile 1962, México 1970, EUA 1994 e Japão/Coreia 2002.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;0,900;1,800;1,900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="site-header">
+    <div class="header-inner">
+    <a href="index.html" class="brand" data-testid="brand-logo" aria-label="Canarinho 5 estrelas — início">
+        <svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="32" cy="32" r="30" fill="#009739"/>
+        <polygon points="32,6 56,32 32,58 8,32" fill="#FFDF00"/>
+        <circle cx="32" cy="32" r="13" fill="#002776"/>
+        </svg>
+        Canarinho<span class="star">&nbsp;5★</span>
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+        <a href="index.html" data-testid="nav-link-inicio">Início</a>
+        <a href="historia.html" data-testid="nav-link-historia">História</a>
+        <a href="copas.html" class="active" data-testid="nav-link-copas">As 5 Copas</a>
+        <a href="idolos.html" data-testid="nav-link-idolos">Ídolos</a>
+        <a href="estatisticas.html" data-testid="nav-link-estatisticas">Títulos &amp; Stats</a>
+        <a href="uniformes.html" data-testid="nav-link-uniformes">Uniformes</a>
+    </nav>
+    <a href="idolos.html" class="header-cta" data-testid="header-cta-idolos">Explorar Ídolos</a>
+    <button class="nav-toggle" data-testid="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    </div>
+</header>
+
+<main>
+    <section class="page-hero" data-testid="page-hero">
+    <div class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1561580726-1bd7aed04eb0?crop=entropy&cs=srgb&fm=jpg&q=85" alt="Troféu dourado da Copa do Mundo sobre fundo escuro" data-parallax>
+    </div>
+    <div class="container">
+        <p class="kicker hero-fade">Pentacampeã do Mundo</p>
+        <h1 class="page-hero-title" data-testid="page-title">
+        <span class="mask-line"><span class="yellow">As 5</span></span>
+        <span class="mask-line"><span class="stroke">Copas</span></span>
+        </h1>
+        <p class="hero-sub hero-fade" style="max-width:640px">
+        Nenhum país levantou a taça mais vezes. Escolha um ano e reviva a campanha,
+        os heróis e os números de cada conquista.
+        </p>
+    </div>
+    </section>
+
+    <section class="section">
+    <div class="container">
+        <div class="copa-tabs" role="tablist" aria-label="Escolha o ano da Copa" data-testid="copa-tabs">
+        <button class="copa-tab active" data-testid="copa-tab-1958" data-copa="1958" role="tab" aria-selected="true">1958</button>
+        <button class="copa-tab" data-testid="copa-tab-1962" data-copa="1962" role="tab" aria-selected="false">1962</button>
+        <button class="copa-tab" data-testid="copa-tab-1970" data-copa="1970" role="tab" aria-selected="false">1970</button>
+        <button class="copa-tab" data-testid="copa-tab-1994" data-copa="1994" role="tab" aria-selected="false">1994</button>
+        <button class="copa-tab" data-testid="copa-tab-2002" data-copa="2002" role="tab" aria-selected="false">2002</button>
+        </div>
+
+        <div class="copa-panel active" id="copa-1958" data-testid="copa-panel-1958" role="tabpanel">
+        <div>
+            <div class="copa-year-big">1958</div>
+            <p class="copa-country">Suécia · Técnico: Vicente Feola</p>
+            <h3>A Primeira Estrela</h3>
+            <p>O mundo conheceu Pelé, um garoto de 17 anos que marcou um hat-trick na semifinal contra a França e dois gols na final. Ao lado dele, Garrincha hipnotizava marcadores na ponta direita e Didi comandava o meio — eleito o melhor jogador do torneio.</p>
+            <p>Na final, em Solna, o Brasil virou sobre a Suécia dona da casa e venceu por 5 a 2, com dois gols de Pelé (incluindo o famoso chapéu sobre o zagueiro), dois de Vavá e um de Zagallo. A primeira estrela do planeta era amarela.</p>
+            <div class="copa-stats">
+            <div class="copa-stat"><div class="v">5–2</div><div class="l">Final vs Suécia</div></div>
+            <div class="copa-stat"><div class="v">16</div><div class="l">Gols Marcados</div></div>
+            <div class="copa-stat"><div class="v">6</div><div class="l">Gols de Pelé</div></div>
+            </div>
+        </div>
+        <aside class="copa-squad">
+            <h4>Esquadrão Imortal</h4>
+            <ul>
+            <li><strong>Gylmar</strong><span class="role">Goleiro</span></li>
+            <li><strong>Djalma Santos</strong><span class="role">Lateral</span></li>
+            <li><strong>Bellini</strong><span class="role">Capitão</span></li>
+            <li><strong>Nílton Santos</strong><span class="role">Lateral</span></li>
+            <li><strong>Didi</strong><span class="role">Meia · Melhor da Copa</span></li>
+            <li><strong>Zito</strong><span class="role">Volante</span></li>
+            <li><strong>Garrincha</strong><span class="role">Ponta</span></li>
+            <li><strong>Zagallo</strong><span class="role">Ponta</span></li>
+            <li><strong>Vavá</strong><span class="role">Centroavante</span></li>
+            <li><strong>Pelé</strong><span class="role">Atacante · 17 anos</span></li>
+            </ul>
+        </aside>
+        <div class="copa-gallery" data-testid="copa-gallery-1958">
+            <figure><img src="https://images.unsplash.com/photo-1780336673883-05f8bce49ae3?q=80&w=900&auto=format&fit=crop" alt="Camisa azul da Seleção usada na final de 1958" loading="lazy"><figcaption>O azul da primeira decisão</figcaption></figure>
+            <figure><img src="https://images.unsplash.com/photo-1637203723757-a9b26181e1ad?q=80&w=1160&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Troféu dourado de Copa do Mundo" loading="lazy"><figcaption>A taça que mudou o Brasil</figcaption></figure>
+            <figure><img src="https://s2.glbimg.com/9mUm0YU3qwmqsMPpUvlVSN4O5iMFtEW2Pdqcgp4ZwmhrIBh5foQOgk_-VaNmUYWB/s.glbimg.com/es/ge/f/original/2012/11/22/mosaico_torcidaaik_sujaydutt.jpg_95.jpg" alt="Vista aérea de um grande estádio de futebol" loading="lazy"><figcaption>O palco da primeira estrela</figcaption></figure>
+        </div>
+        </div>
+
+        <div class="copa-panel" id="copa-1962" data-testid="copa-panel-1962" role="tabpanel">
+        <div>
+            <div class="copa-year-big">1962</div>
+            <p class="copa-country">Chile · Técnico: Aymoré Moreira</p>
+            <h3>O Bi sem Pelé</h3>
+            <p>Pelé lesionou a coxa no segundo jogo e ficou fora do restante do torneio. Foi quando Garrincha jogou talvez a melhor Copa individual da história: dois gols contra a Inglaterra, dois contra o Chile na semifinal, e uma atuação de gala na final.</p>
+            <p>Em Santiago, o Brasil venceu a Tchecoslováquia por 3 a 1, com gols de Amarildo — o substituto de Pelé —, Zito e Vavá. O Brasil se tornou bicampeão mundial consecutivo, feito que só a Itália havia alcançado antes.</p>
+            <div class="copa-stats">
+            <div class="copa-stat"><div class="v">3–1</div><div class="l">Final vs Tchecoslováquia</div></div>
+            <div class="copa-stat"><div class="v">14</div><div class="l">Gols Marcados</div></div>
+            <div class="copa-stat"><div class="v">4</div><div class="l">Gols de Garrincha</div></div>
+            </div>
+        </div>
+        <aside class="copa-squad">
+            <h4>Esquadrão Imortal</h4>
+            <ul>
+            <li><strong>Gylmar</strong><span class="role">Goleiro</span></li>
+            <li><strong>Djalma Santos</strong><span class="role">Lateral</span></li>
+            <li><strong>Mauro Ramos</strong><span class="role">Capitão</span></li>
+            <li><strong>Nílton Santos</strong><span class="role">Lateral</span></li>
+            <li><strong>Didi</strong><span class="role">Meia</span></li>
+            <li><strong>Zito</strong><span class="role">Volante</span></li>
+            <li><strong>Garrincha</strong><span class="role">Ponta · Melhor da Copa</span></li>
+            <li><strong>Zagallo</strong><span class="role">Ponta</span></li>
+            <li><strong>Vavá</strong><span class="role">Centroavante</span></li>
+            <li><strong>Amarildo</strong><span class="role">Atacante</span></li>
+            </ul>
+        </aside>
+        <div class="copa-gallery" data-testid="copa-gallery-1962">
+            <figure><img src="https://static.dw.com/image/62167757_1004.webp" alt="Torcedores brasileiros com bandeiras verde e amarela" loading="lazy"><figcaption>A festa que atravessou fronteiras</figcaption></figure>
+            <figure><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbRRYlaIcdfGHLZpkqTZnPRCXz2K9T0q8oAz5U4eVWOvejtubcfd-JO_o&s=10" alt="Bola de futebol no gramado" loading="lazy"><figcaption>O bi sem Pelé</figcaption></figure>
+            <figure><img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/07/garrincha-1962-fifa-e1783281962210.webp?w=557" alt="Gol de futebol sob luzes à noite" loading="lazy"><figcaption>Garrincha decide no Chile</figcaption></figure>
+        </div>
+        </div>
+
+        <div class="copa-panel" id="copa-1970" data-testid="copa-panel-1970" role="tabpanel">
+        <div>
+            <div class="copa-year-big">1970</div>
+            <p class="copa-country">México · Técnico: Mário Zagallo</p>
+            <h3>A Seleção Perfeita</h3>
+            <p>Eleita por especialistas como a melhor equipe de todos os tempos: Pelé, Jairzinho (gol em todos os jogos), Tostão, Rivellino, Gérson, Clodoaldo e o capitão Carlos Alberto. Seis vitórias em seis jogos, 19 gols e um futebol que virou referência estética eterna.</p>
+            <p>A final contra a Itália terminou 4 a 1, coroada pelo gol mais coletivo da história: oito toques, Clodoaldo driblando quatro, e Carlos Alberto fuzilando após passe cego de Pelé. Com o tri, o Brasil ficou para sempre com a Taça Jules Rimet.</p>
+            <div class="copa-stats">
+            <div class="copa-stat"><div class="v">4–1</div><div class="l">Final vs Itália</div></div>
+            <div class="copa-stat"><div class="v">19</div><div class="l">Gols Marcados</div></div>
+            <div class="copa-stat"><div class="v">7</div><div class="l">Gols de Jairzinho</div></div>
+            </div>
+        </div>
+        <aside class="copa-squad">
+            <h4>Esquadrão Imortal</h4>
+            <ul>
+            <li><strong>Félix</strong><span class="role">Goleiro</span></li>
+            <li><strong>Carlos Alberto</strong><span class="role">Capitão</span></li>
+            <li><strong>Brito</strong><span class="role">Zagueiro</span></li>
+            <li><strong>Everaldo</strong><span class="role">Lateral</span></li>
+            <li><strong>Clodoaldo</strong><span class="role">Volante</span></li>
+            <li><strong>Gérson</strong><span class="role">Meia</span></li>
+            <li><strong>Rivellino</strong><span class="role">Meia</span></li>
+            <li><strong>Jairzinho</strong><span class="role">Ponta · Furacão</span></li>
+            <li><strong>Tostão</strong><span class="role">Atacante</span></li>
+            <li><strong>Pelé</strong><span class="role">O Rei · Melhor da Copa</span></li>
+            </ul>
+        </aside>
+        <div class="copa-gallery" data-testid="copa-gallery-1970">
+            <figure><img src="https://images.unsplash.com/photo-1637203723757-a9b26181e1ad?q=80&w=900&auto=format&fit=crop" alt="Taça dourada sobre o gramado do estádio" loading="lazy"><figcaption>A Jules Rimet ficou para sempre</figcaption></figure>
+            <figure><img src="https://cdn.diariodolitoral.com.br/uploads/2026/05/Hoje-nao-trabalhamos-porque-vamos-ver-Pele-a-historia-que-marcou-a-Copa-d_20260519_191754_0000-649x365.jpg" alt="Estádio iluminado à noite visto de cima" loading="lazy"><figcaption>O México parou para ver arte</figcaption></figure>
+            <figure><img src="https://vermelho.org.br/wp-content/uploads/2026/06/Brasil-1970.jpg" alt="Jogador chutando a bola em campo" loading="lazy"><figcaption>O gol coletivo perfeito</figcaption></figure>
+        </div>
+        </div>
+
+        <div class="copa-panel" id="copa-1994" data-testid="copa-panel-1994" role="tabpanel">
+        <div>
+            <div class="copa-year-big">1994</div>
+            <p class="copa-country">Estados Unidos · Técnico: Carlos Alberto Parreira</p>
+            <h3>O Tetra depois de 24 anos</h3>
+            <p>Após um jejum de quase um quarto de século, Romário e Bebeto — com o comemorativo "balanço do bebê" — guiaram um time pragmático e letal. Dunga ergueu a taça como capitão em Pasadena, diante de 94 mil pessoas.</p>
+            <p>A final contra a Itália terminou 0 a 0 e foi decidida na primeira disputa de pênaltis da história das finais de Copa. Taffarel defendeu, Baggio isolou a última cobrança italiana, e o Brasil virou o primeiro tetracampeão do mundo.</p>
+            <div class="copa-stats">
+            <div class="copa-stat"><div class="v">3–2</div><div class="l">Pênaltis vs Itália</div></div>
+            <div class="copa-stat"><div class="v">11</div><div class="l">Gols Marcados</div></div>
+            <div class="copa-stat"><div class="v">5</div><div class="l">Gols de Romário</div></div>
+            </div>
+        </div>
+        <aside class="copa-squad">
+            <h4>Esquadrão Imortal</h4>
+            <ul>
+            <li><strong>Taffarel</strong><span class="role">Goleiro · Herói</span></li>
+            <li><strong>Jorginho</strong><span class="role">Lateral</span></li>
+            <li><strong>Aldair</strong><span class="role">Zagueiro</span></li>
+            <li><strong>Branco</strong><span class="role">Lateral</span></li>
+            <li><strong>Dunga</strong><span class="role">Capitão</span></li>
+            <li><strong>Mauro Silva</strong><span class="role">Volante</span></li>
+            <li><strong>Mazinho</strong><span class="role">Meia</span></li>
+            <li><strong>Zinho</strong><span class="role">Meia</span></li>
+            <li><strong>Bebeto</strong><span class="role">Atacante</span></li>
+            <li><strong>Romário</strong><span class="role">Baixinho · Melhor da Copa</span></li>
+            </ul>
+        </aside>
+        <div class="copa-gallery" data-testid="copa-gallery-1994">
+            <figure><img src="https://i.redd.it/f3czg7pg557f1.jpeg" alt="estádio lotado" loading="lazy"><figcaption>94 mil vozes em Pasadena</figcaption></figure>
+            <figure><img src="https://conteudo.imguol.com.br/c/esporte/c7/2020/04/24/copa-do-mundo-de-1994-romario-levanta-a-taca-do-tetra-1587772603305_v2_4x3.jpg" alt="seleçao brasileira" loading="lazy"><figcaption>24 anos de espera nos pés deles</figcaption></figure>
+            <figure><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThSYoXqnDuzJ43HoKte7_xLs_b7MILibAvvvEIZVPZYiYMNET36ZcZXQ0&s=10" alt="seleçao brasileira" loading="lazy"><figcaption>A festa do tetra</figcaption></figure>
+        </div>
+        </div>
+
+        <div class="copa-panel" id="copa-2002" data-testid="copa-panel-2002" role="tabpanel">
+        <div>
+            <div class="copa-year-big">2002</div>
+            <p class="copa-country">Japão &amp; Coreia do Sul · Técnico: Luiz Felipe Scolari</p>
+            <h3>O Penta do Fenômeno</h3>
+            <p>Ronaldo passou três anos destruído por lesões no joelho e quase se aposentou. Voltou, cortou o cabelo "cascão", marcou 8 gols — incluindo os dois da final contra a Alemanha — e escreveu a maior história de superação do esporte.</p>
+            <p>Com o trio R (Ronaldo, Rivaldo e Ronaldinho) em campo e Cafu levantando a taça como capitão, o Brasil venceu os 7 jogos da campanha, algo que nenhuma seleção havia feito em Copas com 32 seleções. Pentacampeonato absoluto.</p>
+            <div class="copa-stats">
+            <div class="copa-stat"><div class="v">2–0</div><div class="l">Final vs Alemanha</div></div>
+            <div class="copa-stat"><div class="v">18</div><div class="l">Gols Marcados</div></div>
+            <div class="copa-stat"><div class="v">8</div><div class="l">Gols de Ronaldo</div></div>
+            </div>
+        </div>
+        <aside class="copa-squad">
+            <h4>Esquadrão Imortal</h4>
+            <ul>
+            <li><strong>Marcos</strong><span class="role">Goleiro</span></li>
+            <li><strong>Cafu</strong><span class="role">Capitão</span></li>
+            <li><strong>Lúcio</strong><span class="role">Zagueiro</span></li>
+            <li><strong>Edmílson</strong><span class="role">Zagueiro</span></li>
+            <li><strong>Roberto Carlos</strong><span class="role">Lateral</span></li>
+            <li><strong>Gilberto Silva</strong><span class="role">Volante</span></li>
+            <li><strong>Kléberson</strong><span class="role">Meia</span></li>
+            <li><strong>Ronaldinho</strong><span class="role">Meia-atacante</span></li>
+            <li><strong>Rivaldo</strong><span class="role">Atacante · 5 gols</span></li>
+            <li><strong>Ronaldo</strong><span class="role">Fenômeno · Artilheiro</span></li>
+            </ul>
+        </aside>
+        <div class="copa-gallery" data-testid="copa-gallery-2002">
+            <figure><img src="https://dasports.com.br/cdn/shop/products/camisa-selecao-brasileira-retro-2002-amarela-nike-6127581.jpg?v=1756701067" alt="Manto amareloda Seleção" loading="lazy"><figcaption>O amarelo da quinta estrela</figcaption></figure>
+            <figure><img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/11/ronaldo-fenomeno-historia-da-copa-do-mundo-e-suas-curiosidades-e1774043175360.jpeg?w=419&h=283&crop=0&quality=90" alt="Fenômeno" loading="lazy"><figcaption>8 gols do Fenômeno</figcaption></figure>
+            <figure><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb9ZW-npaSIPyG4TnnBYm14zrvKO6i9-yFkSPWN3dorsOYcP2Ea5Lhli4&s=10" alt="estadio" loading="lazy"><figcaption>Yokohama, palco do Penta</figcaption></figure>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <a href="idolos.html" class="next-page" data-testid="next-page-idolos">
+    <span class="np-label">Próximo capítulo</span>
+    <span class="np-title">Ídolos →</span>
+    </a>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+    <div class="footer-top">
+        <div class="footer-brand">
+        <a href="index.html" class="brand" data-testid="footer-brand">
+            <svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true">
+            <circle cx="32" cy="32" r="30" fill="#009739"/>
+            <polygon points="32,6 56,32 32,58 8,32" fill="#FFDF00"/>
+            <circle cx="32" cy="32" r="13" fill="#002776"/>
+            </svg>
+            Canarinho<span class="star">&nbsp;5★</span>
+        </a>
+        <p>Projeto acadêmico sobre a Seleção Brasileira de Futebol — história, conquistas, ídolos e o manto mais famoso do esporte mundial.</p>
+        </div>
+        <div class="footer-nav">
+        <div>
+            <h5>Navegação</h5>
+            <ul>
+            <li><a href="index.html" data-testid="footer-link-inicio">Início</a></li>
+            <li><a href="historia.html" data-testid="footer-link-historia">História</a></li>
+            <li><a href="copas.html" data-testid="footer-link-copas">As 5 Copas</a></li>
+            </ul>
+        </div>
+        <div>
+            <h5>Acervo</h5>
+            <ul>
+            <li><a href="idolos.html" data-testid="footer-link-idolos">Ídolos</a></li>
+            <li><a href="estatisticas.html" data-testid="footer-link-estatisticas">Títulos &amp; Stats</a></li>
+            <li><a href="uniformes.html" data-testid="footer-link-uniformes">Uniformes</a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>Canarinho 5★ · Projeto de Faculdade · 2026</span>
+        <span>Feito com HTML · CSS · JavaScript</span>
+    </div>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="main.js"></script>
+<script>
+    (function () {
+    var tabs = document.querySelectorAll('.copa-tab');
+    var panels = document.querySelectorAll('.copa-panel');
+    tabs.forEach(function (tab) {
+        tab.addEventListener('click', function () {
+        tabs.forEach(function (t) { t.classList.remove('active'); t.setAttribute('aria-selected', 'false'); });
+        panels.forEach(function (p) { p.classList.remove('active'); });
+        tab.classList.add('active');
+        tab.setAttribute('aria-selected', 'true');
+        document.getElementById('copa-' + tab.getAttribute('data-copa')).classList.add('active');
+        });
+    });
+    })();
+</script>
+</body>
+</html>

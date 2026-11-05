@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uniformes — Canarinho 5★</title>
+<meta name="description" content="A evolução do manto da Seleção Brasileira: do branco de 1914 ao amarelo canarinho criado em 1953 e ao azul reserva campeão do mundo.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;0,900;1,800;1,900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="site-header">
+    <div class="header-inner">
+    <a href="index.html" class="brand" data-testid="brand-logo" aria-label="Canarinho 5 estrelas — início">
+        <svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="32" cy="32" r="30" fill="#009739"/>
+        <polygon points="32,6 56,32 32,58 8,32" fill="#FFDF00"/>
+        <circle cx="32" cy="32" r="13" fill="#002776"/>
+        </svg>
+        Canarinho<span class="star">&nbsp;5★</span>
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+        <a href="index.html" data-testid="nav-link-inicio">Início</a>
+        <a href="historia.html" data-testid="nav-link-historia">História</a>
+        <a href="copas.html" data-testid="nav-link-copas">As 5 Copas</a>
+        <a href="idolos.html" data-testid="nav-link-idolos">Ídolos</a>
+        <a href="estatisticas.html" data-testid="nav-link-estatisticas">Títulos &amp; Stats</a>
+        <a href="uniformes.html" class="active" data-testid="nav-link-uniformes">Uniformes</a>
+    </nav>
+    <a href="index.html" class="header-cta" data-testid="header-cta-home">Voltar ao Início</a>
+    <button class="nav-toggle" data-testid="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    </div>
+</header>
+
+<main>
+    <section class="page-hero" data-testid="page-hero">
+    <div class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1783434423781-b942fefc59a0?crop=entropy&cs=srgb&fm=jpg&q=85" alt="Detalhe do manto amarelo canarinho da Seleção" data-parallax>
+    </div>
+    <div class="container">
+        <p class="kicker hero-fade">O Manto Sagrado</p>
+        <h1 class="page-hero-title" data-testid="page-title">
+        <span class="mask-line"><span class="yellow">Uniformes</span></span>
+        <span class="mask-line"><span class="stroke">da Lenda</span></span>
+        </h1>
+        <p class="hero-sub hero-fade" style="max-width:640px">
+        A camisa mais famosa do esporte nasceu de um trauma — e de um concurso de jornal.
+        Alterne entre o manto titular e o reserva e conheça a história de cada um.
+        </p>
+    </div>
+    </section>
+
+    <section class="section">
+    <div class="container">
+        <div class="kit-toggle" role="tablist" aria-label="Escolha o uniforme" data-testid="kit-toggle">
+        <button class="active-home" id="btn-home" data-testid="kit-btn-home" role="tab" aria-selected="true">
+            <span class="swatch" style="background:#FFDF00"></span> Manto Canarinho
+        </button>
+        <button id="btn-away" data-testid="kit-btn-away" role="tab" aria-selected="false">
+            <span class="swatch" style="background:#002776"></span> Uniforme Azul
+        </button>
+        </div>
+
+        <div class="kit-stage">
+        <div class="kit-visual" data-testid="kit-visual">
+            <img id="img-home" class="show" src="https://i.pinimg.com/736x/aa/ca/75/aaca75e0cd8d709f58111b3e5ab27eec.jpg" alt="Camisa amarela canarinho da Seleção Brasileira">
+            <img id="img-away" src="https://i.pinimg.com/736x/9b/a5/06/9ba5060bc51d39958babb1b0c302cee4.jpg" alt="Camisa azul reserva da Seleção Brasileira">
+            <span class="kit-caption" id="kit-caption">Uniforme Principal · Desde 1954</span>
+        </div>
+
+        <div class="kit-info">
+            <div id="info-home" data-testid="kit-info-home">
+            <h3>O Amarelo Canarinho</h3>
+            <p>Até 1950, o Brasil jogava de branco. Após o Maracanazo, a camisa branca foi considerada "sem patriotismo" e aposentada. Em 1953, o jornal Correio da Manhã lançou um concurso nacional para criar um novo uniforme com as cores da bandeira.</p>
+            <p>O vencedor foi Aldyr Garcia Schlee, um jovem gaúcho de 19 anos que morava na fronteira com o Uruguai — ironia das ironias, torcedor do rival que causou o trauma. Seu desenho: camisa amarela com gola e punhos verdes, calção azul e meias brancas.</p>
+            <div class="kit-facts">
+                <div class="kit-fact"><span class="yr">1914</span><span class="tx">O Brasil estreia jogando de branco, camisa herdada dos primeiros clubes do país.</span></div>
+                <div class="kit-fact"><span class="yr">1950</span><span class="tx">O Maracanazo aposenta o branco. O país exige um uniforme com as cores nacionais.</span></div>
+                <div class="kit-fact"><span class="yr">1953</span><span class="tx">Aldyr Garcia Schlee vence o concurso com o desenho do manto canarinho.</span></div>
+                <div class="kit-fact"><span class="yr">1954</span><span class="tx">Estreia do amarelo em campo, em amistoso contra o Chile, no Maracanã.</span></div>
+                <div class="kit-fact"><span class="yr">1958</span><span class="tx">O canarinho conquista o mundo pela primeira vez, na Suécia, com Pelé e Garrincha.</span></div>
+            </div>
+            </div>
+            <div id="info-away" style="display:none" data-testid="kit-info-away">
+            <h3>O Azul Campeão do Mundo</h3>
+            <p>A camisa azul com detalhes brancos é o uniforme reserva — mas longe de ser coadjuvante. Ela entrou para a história justamente na primeira estrela: como a Suécia também jogava de amarelo, o Brasil vestiu o azul na final de 1958 e venceu por 5 a 2.</p>
+            <p>O azul, tirado do círculo central da bandeira nacional, voltou a decidir títulos: foi com ele que o Brasil venceu a final da Copa América de 2019 no Maracanã e diversos jogos históricos, incluindo o triunfo sobre a Inglaterra na Copa de 2002.</p>
+            <div class="kit-facts">
+                <div class="kit-fact"><span class="yr">1958</span><span class="tx">O azul estreia em Copas logo na final — e o Brasil é campeão mundial com ele.</span></div>
+                <div class="kit-fact"><span class="yr">1962</span><span class="tx">Usado na campanha do bicampeonato no Chile, consolidando-se como uniforme oficial.</span></div>
+                <div class="kit-fact"><span class="yr">2002</span><span class="tx">Com o azul, o Brasil elimina a Inglaterra nas quartas do Penta, com gol de Ronaldinho.</span></div>
+                <div class="kit-fact"><span class="yr">2019</span><span class="tx">A final da Copa América no Maracanã é vencida de azul, sobre o Peru, por 3 a 1.</span></div>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="section-head" style="margin-top:96px" data-reveal>
+        <p class="kicker">Linha do Tempo do Manto</p>
+        <h2 class="section-title">Eras do <em>uniforme</em></h2>
+        </div>
+        <div class="era-grid" data-testid="era-grid">
+        <div class="era-card" data-reveal data-testid="era-1914">
+            <div class="era-yr">1914</div>
+            <h4>A Era Branca</h4>
+            <p>Camisa branca de gola alta, sem escudo padronizado. O uniforme dos primórdios, usado por 36 anos e duas gerações de pioneiros.</p>
+        </div>
+        <div class="era-card" data-reveal data-testid="era-1954">
+            <div class="era-yr">1954</div>
+            <h4>Nasce o Canarinho</h4>
+            <p>Amarelo com gola verde, calção azul e meias brancas: o desenho de Aldyr Schlee estreia quatro anos antes do primeiro título mundial.</p>
+        </div>
+        <div class="era-card" data-reveal data-testid="era-1970">
+            <div class="era-yr">1970</div>
+            <h4>A Camisa do Tri</h4>
+            <p>O modelo do time perfeito: amarelo vibrante, gola careca verde e o escudo CBD no peito. A imagem que o mundo associa ao futebol-arte.</p>
+        </div>
+        <div class="era-card" data-reveal data-testid="era-1994">
+            <div class="era-yr">1994</div>
+            <h4>O Tetra Moderno</h4>
+            <p>Com o escudo CBF redesenhado e quatro estrelas acima dele, o uniforme do tetra marcou a entrada definitiva da seleção na era esportiva global.</p>
+        </div>
+        <div class="era-card" data-reveal data-testid="era-2002">
+            <div class="era-yr">2002</div>
+            <h4>O Manto do Penta</h4>
+            <p>Tecido tecnológico, corte anatômico e a quinta estrela costurada após Yokohama. O modelo usado pelo trio R virou item de colecionador.</p>
+        </div>
+        <div class="era-card" data-reveal data-testid="era-hoje">
+            <div class="era-yr">Hoje</div>
+            <h4>Tradição + Tecnologia</h4>
+            <p>Tecidos ultraleves e reciclados, gola homenageando edições históricas e as cinco estrelas sempre acima do escudo. O manto evolui — a mística, não.</p>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <a href="index.html" class="next-page" data-testid="next-page-home">
+    <span class="np-label">Voltar ao começo</span>
+    <span class="np-title">Início →</span>
+    </a>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+    <div class="footer-top">
+        <div class="footer-brand">
+        <a href="index.html" class="brand" data-testid="footer-brand">
+            <svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true">
+            <circle cx="32" cy="32" r="30" fill="#009739"/>
+            <polygon points="32,6 56,32 32,58 8,32" fill="#FFDF00"/>
+            <circle cx="32" cy="32" r="13" fill="#002776"/>
+            </svg>
+            Canarinho<span class="star">&nbsp;5★</span>
+        </a>
+        <p>Projeto acadêmico sobre a Seleção Brasileira de Futebol — história, conquistas, ídolos e o manto mais famoso do esporte mundial.</p>
+        </div>
+        <div class="footer-nav">
+        <div>
+            <h5>Navegação</h5>
+            <ul>
+            <li><a href="index.html" data-testid="footer-link-inicio">Início</a></li>
+            <li><a href="historia.html" data-testid="footer-link-historia">História</a></li>
+            <li><a href="copas.html" data-testid="footer-link-copas">As 5 Copas</a></li>
+            </ul>
+        </div>
+        <div>
+            <h5>Acervo</h5>
+            <ul>
+            <li><a href="idolos.html" data-testid="footer-link-idolos">Ídolos</a></li>
+            <li><a href="estatisticas.html" data-testid="footer-link-estatisticas">Títulos &amp; Stats</a></li>
+            <li><a href="uniformes.html" data-testid="footer-link-uniformes">Uniformes</a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>Canarinho 5★ · Projeto de Faculdade · 2026</span>
+        <span>Feito com HTML · CSS · JavaScript</span>
+    </div>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="main.js"></script>
+<script>
+    (function () {
+    var btnHome = document.getElementById('btn-home');
+    var btnAway = document.getElementById('btn-away');
+    var imgHome = document.getElementById('img-home');
+    var imgAway = document.getElementById('img-away');
+    var infoHome = document.getElementById('info-home');
+    var infoAway = document.getElementById('info-away');
+    var caption = document.getElementById('kit-caption');
+
+    function showHome() {
+        btnHome.classList.add('active-home'); btnHome.setAttribute('aria-selected', 'true');
+        btnAway.classList.remove('active-away'); btnAway.setAttribute('aria-selected', 'false');
+        imgHome.classList.add('show'); imgAway.classList.remove('show');
+        infoHome.style.display = 'block'; infoAway.style.display = 'none';
+        caption.textContent = 'Uniforme Principal · Desde 1954';
+    }
+    function showAway() {
+        btnAway.classList.add('active-away'); btnAway.setAttribute('aria-selected', 'true');
+        btnHome.classList.remove('active-home'); btnHome.setAttribute('aria-selected', 'false');
+        imgAway.classList.add('show'); imgHome.classList.remove('show');
+        infoAway.style.display = 'block'; infoHome.style.display = 'none';
+        caption.textContent = 'Uniforme Reserva · Campeão em 1958';
+    }
+    btnHome.addEventListener('click', showHome);
+    btnAway.addEventListener('click', showAway);
+    })();
+</script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Títulos &amp; Estatísticas — Canarinho 5★</title>
+<meta name="description" content="Todos os títulos e números da Seleção Brasileira: Copas do Mundo, Copas América, Confederações, Olimpíadas, artilheiros e recordes.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;0,900;1,800;1,900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="site-header">
+    <div class="header-inner">
+    <a href="index.html" class="brand" data-testid="brand-logo" aria-label="Canarinho 5 estrelas — início">
+        <svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="32" cy="32" r="30" fill="#009739"/>
+        <polygon points="32,6 56,32 32,58 8,32" fill="#FFDF00"/>
+        <circle cx="32" cy="32" r="13" fill="#002776"/>
+        </svg>
+        Canarinho<span class="star">&nbsp;5★</span>
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+        <a href="index.html" data-testid="nav-link-inicio">Início</a>
+        <a href="historia.html" data-testid="nav-link-historia">História</a>
+        <a href="copas.html" data-testid="nav-link-copas">As 5 Copas</a>
+        <a href="idolos.html" data-testid="nav-link-idolos">Ídolos</a>
+        <a href="estatisticas.html" class="active" data-testid="nav-link-estatisticas">Títulos &amp; Stats</a>
+        <a href="uniformes.html" data-testid="nav-link-uniformes">Uniformes</a>
+    </nav>
+    <a href="uniformes.html" class="header-cta" data-testid="header-cta-uniformes">Ver Uniformes</a>
+    <button class="nav-toggle" data-testid="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    </div>
+</header>
+
+<main>
+    <section class="page-hero" data-testid="page-hero">
+    <div class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1637203723757-a9b26181e1ad?crop=entropy&cs=srgb&fm=jpg&q=85" alt="Troféu dourado sobre o gramado de um estádio" data-parallax>
+    </div>
+    <div class="container">
+        <p class="kicker hero-fade">Números que Ninguém Alcança</p>
+        <h1 class="page-hero-title" data-testid="page-title">
+        <span class="mask-line"><span class="yellow">Títulos</span></span>
+        <span class="mask-line"><span class="stroke">&amp; Stats</span></span>
+        </h1>
+        <p class="hero-sub hero-fade" style="max-width:640px">
+        A sala de troféus mais pesada do planeta e os números que explicam por que
+        a camisa amarela pesa diferente.
+        </p>
+    </div>
+    </section>
+
+    <section class="section">
+    <div class="container">
+        <div class="section-head" data-reveal>
+        <p class="kicker">Sala de Troféus</p>
+        <h2 class="section-title">Todas as <em>conquistas</em></h2>
+        </div>
+        <div class="stats-bento" data-testid="trophies-bento">
+        <div class="stat-tile col-8 tall" data-reveal data-testid="stat-worldcup">
+            <div class="tile-img"><img src="https://i.pinimg.com/736x/6a/69/20/6a692017edb8b66f3067f43d73f7ed05.jpg" alt="" loading="lazy"></div>
+            <div class="big" data-count="5">0</div>
+            <div class="cap">Copas do Mundo · 1958 · 1962 · 1970 · 1994 · 2002</div>
+        </div>
+        <div class="stat-tile col-4" data-reveal data-testid="stat-america">
+            <div class="tile-img"><img src="https://i.pinimg.com/1200x/52/29/ce/5229ce43f4b8a6fc1e9678b085665df5.jpg" alt="" loading="lazy"></div>
+            <div class="big" data-count="9">0</div>
+            <div class="cap">Copas América · Última em 2019</div>
+        </div>
+        <div class="stat-tile col-4" data-reveal data-testid="stat-confed">
+            <div class="tile-img"><img src="https://i.pinimg.com/736x/4e/a2/d1/4ea2d1bcdfc701bbcecccfd6f32da4fa.jpg" alt="" loading="lazy"></div>
+            <div class="big" data-count="4">0</div>
+            <div class="cap">Copas das Confederações · Recorde Mundial</div>
+        </div>
+        <div class="stat-tile col-6" data-reveal data-testid="stat-olympic">
+            <div class="tile-img"><img src="https://i.pinimg.com/1200x/5b/8e/28/5b8e284e0980ff28bf3570d153d62cd0.jpg" alt="" loading="lazy"></div>
+            <div class="big" data-count="2">0</div>
+            <div class="cap">Ouros Olímpicos · Rio 2016 · Tóquio 2020</div>
+        </div>
+        <div class="stat-tile col-6" data-reveal data-testid="stat-edicoes">
+            <div class="tile-img"><img src="https://i.pinimg.com/736x/3d/65/8a/3d658ab843f8c56c09a3740d2f616143.jpg" alt="" loading="lazy"></div>
+            <div class="big" data-count="22">0</div>
+            <div class="cap">Copas do Mundo Disputadas · Única em Todas</div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+    <div class="container split">
+        <div data-reveal>
+        <p class="kicker">Marcas Históricas</p>
+        <h2 class="section-title">Recordes <em>brasileiros</em></h2>
+        <div class="kit-facts" style="margin-top:32px" data-testid="records-list">
+            <div class="kit-fact"><span class="yr">5★</span><span class="tx">Maior número de títulos de Copa do Mundo — à frente de Alemanha e Itália (4 cada).</span></div>
+            <div class="kit-fact"><span class="yr">23/23</span><span class="tx">Única seleção presente em todas as edições da Copa do Mundo, de 1930 a 2026.</span></div>
+            <div class="kit-fact"><span class="yr">117</span><span class="tx">Jogos em Copas do Mundo — recorde absoluto de partidas no torneio.</span></div>
+            <div class="kit-fact"><span class="yr">244</span><span class="tx">Gols marcados em Copas do Mundo — a maior artilharia da história do torneio.</span></div>
+            <div class="kit-fact"><span class="yr">76</span><span class="tx">Vitórias em Copas do Mundo — nenhuma seleção venceu mais jogos.</span></div>
+            <div class="kit-fact"><span class="yr">1970</span><span class="tx">Único país a conquistar a Taça Jules Rimet em definitivo, após o tricampeonato.</span></div>
+        </div>
+        </div>
+        <div class="framed-img" data-reveal>
+        <img src="https://i.pinimg.com/736x/42/ef/67/42ef6753e06e0ac9ad7f39f8d457e05b.jpg" alt="Multidão de torcedores brasileiros comemorando com bandeiras" loading="lazy">
+        </div>
+    </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+    <div class="container">
+        <div class="section-head" data-reveal>
+        <p class="kicker">Gols &amp; Presenças</p>
+        <h2 class="section-title">Artilheiros e <em>recordistas</em></h2>
+        </div>
+        <div class="split" style="align-items:start">
+        <div data-reveal>
+            <div class="table-wrap" data-testid="table-scorers">
+            <table class="data-table">
+                <thead>
+                <tr><th>#</th><th>Jogador</th><th>Gols</th><th>Era</th></tr>
+                </thead>
+                <tbody>
+                <tr><td>1</td><td>Neymar Jr</td><td class="num">79</td><td>2010–</td></tr>
+                <tr><td>2</td><td>Pelé</td><td class="num">77</td><td>1957–1971</td></tr>
+                <tr><td>3</td><td>Ronaldo</td><td class="num">62</td><td>1994–2011</td></tr>
+                <tr><td>4</td><td>Romário</td><td class="num">55</td><td>1987–2005</td></tr>
+                <tr><td>5</td><td>Zico</td><td class="num">48</td><td>1976–1986</td></tr>
+                <tr><td>6</td><td>Bebeto</td><td class="num">39</td><td>1985–1998</td></tr>
+                <tr><td>7</td><td>Rivaldo</td><td class="num">35</td><td>1993–2003</td></tr>
+                <tr><td>8</td><td>Jairzinho</td><td class="num">33</td><td>1964–1982</td></tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+        <div data-reveal>
+            <div class="table-wrap" data-testid="table-appearances">
+            <table class="data-table">
+                <thead>
+                <tr><th>#</th><th>Jogador</th><th>Jogos</th><th>Posição</th></tr>
+                </thead>
+                <tbody>
+                <tr><td>1</td><td>Cafu</td><td class="num">142</td><td>Lateral</td></tr>
+                <tr><td>2</td><td>Neymar Jr</td><td class="num">128</td><td>Atacante</td></tr>
+                <tr><td>3</td><td>Roberto Carlos</td><td class="num">125</td><td>Lateral</td></tr>
+                <tr><td>4</td><td>Dani Alves</td><td class="num">126</td><td>Lateral</td></tr>
+                <tr><td>5</td><td>Lúcio</td><td class="num">105</td><td>Zagueiro</td></tr>
+                <tr><td>6</td><td>Cláudio Taffarel</td><td class="num">101</td><td>Goleiro</td></tr>
+                <tr><td>7</td><td>Robinho</td><td class="num">100</td><td>Atacante</td></tr>
+                <tr><td>8</td><td>Djalma Santos</td><td class="num">98</td><td>Lateral</td></tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <a href="uniformes.html" class="next-page" data-testid="next-page-uniformes">
+    <span class="np-label">Próximo capítulo</span>
+    <span class="np-title">Uniformes →</span>
+    </a>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+    <div class="footer-top">
+        <div class="footer-brand">
+        <a href="index.html" class="brand" data-testid="footer-brand">
+            <svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true">
+            <circle cx="32" cy="32" r="30" fill="#009739"/>
+            <polygon points="32,6 56,32 32,58 8,32" fill="#FFDF00"/>
+            <circle cx="32" cy="32" r="13" fill="#002776"/>
+            </svg>
+            Canarinho<span class="star">&nbsp;5★</span>
+        </a>
+        <p>Projeto acadêmico sobre a Seleção Brasileira de Futebol — história, conquistas, ídolos e o manto mais famoso do esporte mundial.</p>
+        </div>
+        <div class="footer-nav">
+        <div>
+            <h5>Navegação</h5>
+            <ul>
+            <li><a href="index.html" data-testid="footer-link-inicio">Início</a></li>
+            <li><a href="historia.html" data-testid="footer-link-historia">História</a></li>
+            <li><a href="copas.html" data-testid="footer-link-copas">As 5 Copas</a></li>
+            </ul>
+        </div>
+        <div>
+            <h5>Acervo</h5>
+            <ul>
+            <li><a href="idolos.html" data-testid="footer-link-idolos">Ídolos</a></li>
+            <li><a href="estatisticas.html" data-testid="footer-link-estatisticas">Títulos &amp; Stats</a></li>
+            <li><a href="uniformes.html" data-testid="footer-link-uniformes">Uniformes</a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>Canarinho 5★ · Projeto de Faculdade · 2026</span>
+        <span>Feito com HTML · CSS · JavaScript</span>
+    </div>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ídolos — Canarinho 5★</title>
+  <meta name="description" content="O ranking definitivo dos maiores ídolos da Seleção Brasileira: Pelé, Garrincha, Ronaldo, Romário, Zico e as lendas que fizeram história.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;0,900;1,800;1,900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand" data-testid="brand-logo" aria-label="Canarinho 5 estrelas — início">
+        <svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="32" cy="32" r="30" fill="#009739"/>
+          <polygon points="32,6 56,32 32,58 8,32" fill="#FFDF00"/>
+          <circle cx="32" cy="32" r="13" fill="#002776"/>
+        </svg>
+        Canarinho<span class="star">&nbsp;5★</span>
+      </a>
+      <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+        <a href="index.html" data-testid="nav-link-inicio">Início</a>
+        <a href="historia.html" data-testid="nav-link-historia">História</a>
+        <a href="copas.html" data-testid="nav-link-copas">As 5 Copas</a>
+        <a href="idolos.html" class="active" data-testid="nav-link-idolos">Ídolos</a>
+        <a href="estatisticas.html" data-testid="nav-link-estatisticas">Títulos &amp; Stats</a>
+        <a href="uniformes.html" data-testid="nav-link-uniformes">Uniformes</a>
+      </nav>
+      <a href="estatisticas.html" class="header-cta" data-testid="header-cta-stats">Ver Estatísticas</a>
+      <button class="nav-toggle" data-testid="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero" data-testid="page-hero">
+      <div class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1637203723757-a9b26181e1ad?crop=entropy&cs=srgb&fm=jpg&q=85" alt="Taça dourada no gramado de um estádio" data-parallax>
+      </div>
+      <div class="container">
+        <p class="kicker hero-fade">O Ranking das Lendas</p>
+        <h1 class="page-hero-title" data-testid="page-title">
+          <span class="mask-line"><span class="yellow">Ídolos</span></span>
+          <span class="mask-line"><span class="stroke">Eternos</span></span>
+        </h1>
+        <p class="hero-sub hero-fade" style="max-width:640px">
+          Onze nomes que definiram gerações. Ordene do maior para o menor — ou do
+          menos relevante ao mais — e veja títulos, jogos e gols de cada um pela Seleção.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="sort-controls" data-testid="sort-controls">
+          <button class="sort-btn active" data-testid="sort-btn-desc" data-order="desc">Maior → Menor</button>
+          <button class="sort-btn" data-testid="sort-btn-asc" data-order="asc">Menor → Maior</button>
+        </div>
+
+        <div class="idols-list" id="idols-list" data-testid="idols-list">
+          <article class="idol-card legend" data-rank="1" data-testid="idol-card-pele">
+            <div class="idol-rank">01</div>
+            <div>
+              <h3 class="idol-name">Pelé</h3>
+              <p class="idol-pos">Atacante · 1957 – 1971 · O Rei</p>
+              <p class="idol-bio">O maior jogador de todos os tempos. Único tricampeão mundial como jogador (1958, 1962, 1970), marcou 77 gols pela Seleção e transformou o futebol em arte. Eleito Atleta do Século pelo COI.</p>
+              <div class="idol-trophies">
+                <span class="trophy-chip worldcup">Copa do Mundo 1958</span>
+                <span class="trophy-chip worldcup">Copa do Mundo 1962</span>
+                <span class="trophy-chip worldcup">Copa do Mundo 1970</span>
+                <span class="trophy-chip">Taça Jules Rimet definitiva</span>
+              </div>
+            </div>
+            <div class="idol-stats">
+              <div><div class="v">92</div><div class="l">Jogos</div></div>
+              <div><div class="v">77</div><div class="l">Gols</div></div>
+            </div>
+          </article>
+
+          <article class="idol-card" data-rank="2" data-testid="idol-card-garrincha">
+            <div class="idol-rank">02</div>
+            <div>
+              <h3 class="idol-name">Garrincha</h3>
+              <p class="idol-pos">Ponta-direita · 1955 – 1966 · A Alegria do Povo</p>
+              <p class="idol-bio">Com as pernas tortas e o drible mais desconcertante da história, nunca perdeu uma partida ao lado de Pelé. Carregou o Brasil ao bi em 1962 e foi eleito o melhor jogador daquela Copa.</p>
+              <div class="idol-trophies">
+                <span class="trophy-chip worldcup">Copa do Mundo 1958</span>
+                <span class="trophy-chip worldcup">Copa do Mundo 1962</span>
+                <span class="trophy-chip">Bola de Ouro da Copa 1962</span>
+              </div>
+            </div>
+            <div class="idol-stats">
+              <div><div class="v">50</div><div class="l">Jogos</div></div>
+              <div><div class="v">12</div><div class="l">Gols</div></div>
+            </div>
+          </article>
+
+          <article class="idol-card" data-rank="3" data-testid="idol-card-ronaldo">
+            <div class="idol-rank">03</div>
+            <div>
+              <h3 class="idol-name">Ronaldo Fenômeno</h3>
+              <p class="idol-pos">Centroavante · 1994 – 2011 · O Fenômeno</p>
+              <p class="idol-bio">O centroavante mais completo da era moderna. Superou duas lesões gravíssimas no joelho para ser artilheiro e decisivo do Penta em 2002. Duas vezes melhor do mundo (1996, 1997) antes dos 22 anos — e uma terceira em 2002.</p>
+              <div class="idol-trophies">
+                <span class="trophy-chip worldcup">Copa do Mundo 1994</span>
+                <span class="trophy-chip worldcup">Copa do Mundo 2002</span>
+                <span class="trophy-chip">Copa América 1997 · 1999</span>
+                <span class="trophy-chip">Copa das Confederações 1997</span>
+              </div>
+            </div>
+            <div class="idol-stats">
+              <div><div class="v">98</div><div class="l">Jogos</div></div>
+              <div><div class="v">62</div><div class="l">Gols</div></div>
+            </div>
+          </article>
+
+          <article class="idol-card" data-rank="4" data-testid="idol-card-romario">
+            <div class="idol-rank">04</div>
+            <div>
+              <h3 class="idol-name">Romário</h3>
+              <p class="idol-pos">Centroavante · 1987 – 2005 · O Baixinho</p>
+              <p class="idol-bio">Gênio da pequena área e melhor jogador da Copa de 1994, quando liderou o Brasil ao tetra após 24 anos de espera. Um dos poucos jogadores da história a superar a marca de 1000 gols na carreira.</p>
+              <div class="idol-trophies">
+                <span class="trophy-chip worldcup">Copa do Mundo 1994</span>
+                <span class="trophy-chip">Copa América 1989 · 1997</span>
+                <span class="trophy-chip">Copa das Confederações 1997</span>
+              </div>
+            </div>
+            <div class="idol-stats">
+              <div><div class="v">70</div><div class="l">Jogos</div></div>
+              <div><div class="v">55</div><div class="l">Gols</div></div>
+            </div>
+          </article>
+
+          <article class="idol-card" data-rank="5" data-testid="idol-card-zico">
+            <div class="idol-rank">05</div>
+            <div>
+              <h3 class="idol-name">Zico</h3>
+              <p class="idol-pos">Meia · 1976 – 1986 · O Galinho</p>
+              <p class="idol-bio">O cérebro da seleção mais bonita que não venceu: a de 1982. Maestro das faltas e dos passes impossíveis, é considerado o maior brasileiro a não conquistar uma Copa do Mundo.</p>
+              <div class="idol-trophies">
+                <span class="trophy-chip">Bola de Prata Copa 1982</span>
+                <span class="trophy-chip">3× Bola de Ouro (Placar)</span>
+              </div>
+            </div>
+            <div class="idol-stats">
+              <div><div class="v">71</div><div class="l">Jogos</div></div>
+              <div><div class="v">48</div><div class="l">Gols</div></div>
+            </div>
+          </article>
+
+          <article class="idol-card" data-rank="6" data-testid="idol-card-ronaldinho">
+            <div class="idol-rank">06</div>
+            <div>
+              <h3 class="idol-name">Ronaldinho Gaúcho</h3>
+              <p class="idol-pos">Meia-atacante · 1999 – 2013 · O Bruxo</p>
+              <p class="idol-bio">O sorriso que driblava. Herói do Penta em 2002 com o gol surreal de falta contra a Inglaterra, foi eleito o melhor jogador do mundo duas vezes (2004, 2005) no auge pelo Barcelona.</p>
+              <div class="idol-trophies">
+                <span class="trophy-chip worldcup">Copa do Mundo 2002</span>
+                <span class="trophy-chip">Copa América 1999</span>
+                <span class="trophy-chip">Copa das Confederações 2005</span>
+              </div>
+            </div>
+            <div class="idol-stats">
+              <div><div class="v">97</div><div class="l">Jogos</div></div>
+              <div><div class="v">33</div><div class="l">Gols</div></div>
+            </div>
+          </article>
+
+          <article class="idol-card" data-rank="7" data-testid="idol-card-neymar">
+            <div class="idol-rank">07</div>
+            <div>
+              <h3 class="idol-name">Neymar Jr</h3>
+              <p class="idol-pos">Atacante · 2010 – Presente</p>
+              <p class="idol-bio">Maior artilheiro da história da Seleção, superando Pelé em 2023. Protagonista do primeiro ouro olímpico do Brasil, no Maracanã em 2016, e da Copa das Confederações de 2013, quando foi o melhor do torneio.</p>
+              <div class="idol-trophies">
+                <span class="trophy-chip">Ouro Olímpico 2016</span>
+                <span class="trophy-chip">Copa das Confederações 2013</span>
+                <span class="trophy-chip">Artilheiro histórico da Seleção</span>
+              </div>
+            </div>
+            <div class="idol-stats">
+              <div><div class="v">128</div><div class="l">Jogos</div></div>
+              <div><div class="v">79</div><div class="l">Gols</div></div>
+            </div>
+          </article>
+
+          <article class="idol-card" data-rank="8" data-testid="idol-card-kaka">
+            <div class="idol-rank">08</div>
+            <div>
+              <h3 class="idol-name">Kaká</h3>
+              <p class="idol-pos">Meia · 2002 – 2016</p>
+              <p class="idol-bio">Elegância e velocidade em um só jogador. Campeão do mundo em 2002 e eleito o melhor do planeta em 2007 — o último brasileiro a vencer a Bola de Ouro antes da era Neymar.</p>
+              <div class="idol-trophies">
+                <span class="trophy-chip worldcup">Copa do Mundo 2002</span>
+                <span class="trophy-chip">Copa das Confederações 2005 · 2009</span>
+                <span class="trophy-chip">Bola de Ouro 2007</span>
+              </div>
+            </div>
+            <div class="idol-stats">
+              <div><div class="v">95</div><div class="l">Jogos</div></div>
+              <div><div class="v">29</div><div class="l">Gols</div></div>
+            </div>
+          </article>
+
+          <article class="idol-card" data-rank="9" data-testid="idol-card-rivaldo">
+            <div class="idol-rank">09</div>
+            <div>
+              <h3 class="idol-name">Rivaldo</h3>
+              <p class="idol-pos">Meia-atacante · 1993 – 2003</p>
+              <p class="idol-bio">Subestimado por muitos, decisivo sempre. Marcou 5 gols na campanha do Penta de 2002 e foi eleito melhor do mundo em 1999, ano em que carregou o Brasil ao título da Copa América.</p>
+              <div class="idol-trophies">
+                <span class="trophy-chip worldcup">Copa do Mundo 2002</span>
+                <span class="trophy-chip">Copa América 1999</span>
+                <span class="trophy-chip">Bola de Ouro 1999</span>
+              </div>
+            </div>
+            <div class="idol-stats">
+              <div><div class="v">74</div><div class="l">Jogos</div></div>
+              <div><div class="v">35</div><div class="l">Gols</div></div>
+            </div>
+          </article>
+
+          <article class="idol-card" data-rank="10" data-testid="idol-card-cafu">
+            <div class="idol-rank">10</div>
+            <div>
+              <h3 class="idol-name">Cafu</h3>
+              <p class="idol-pos">Lateral-direito · 1990 – 2006 · O Capitão do Penta</p>
+              <p class="idol-bio">Recordista absoluto de jogos pela Seleção e único jogador da história a disputar três finais de Copa do Mundo consecutivas (1994, 1998, 2002). Ergueu a taça do Penta como capitão.</p>
+              <div class="idol-trophies">
+                <span class="trophy-chip worldcup">Copa do Mundo 1994</span>
+                <span class="trophy-chip worldcup">Copa do Mundo 2002</span>
+                <span class="trophy-chip">Copa América 1997 · 1999</span>
+              </div>
+            </div>
+            <div class="idol-stats">
+              <div><div class="v">142</div><div class="l">Jogos</div></div>
+              <div><div class="v">5</div><div class="l">Gols</div></div>
+            </div>
+          </article>
+
+          <article class="idol-card" data-rank="11" data-testid="idol-card-roberto-carlos">
+            <div class="idol-rank">11</div>
+            <div>
+              <h3 class="idol-name">Roberto Carlos</h3>
+              <p class="idol-pos">Lateral-esquerdo · 1992 – 2006</p>
+              <p class="idol-bio">Dono do chute mais potente que o futebol já viu — incluindo a falta impossível contra a França em 1997. Peça fundamental do Penta de 2002 e um dos maiores laterais de todos os tempos.</p>
+              <div class="idol-trophies">
+                <span class="trophy-chip worldcup">Copa do Mundo 2002</span>
+                <span class="trophy-chip">Copa América 1997 · 1999</span>
+                <span class="trophy-chip">Copa das Confederações 1997</span>
+              </div>
+            </div>
+            <div class="idol-stats">
+              <div><div class="v">125</div><div class="l">Jogos</div></div>
+              <div><div class="v">11</div><div class="l">Gols</div></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <a href="estatisticas.html" class="next-page" data-testid="next-page-estatisticas">
+      <span class="np-label">Próximo capítulo</span>
+      <span class="np-title">Títulos &amp; Stats →</span>
+    </a>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand" data-testid="footer-brand">
+            <svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true">
+              <circle cx="32" cy="32" r="30" fill="#009739"/>
+              <polygon points="32,6 56,32 32,58 8,32" fill="#FFDF00"/>
+              <circle cx="32" cy="32" r="13" fill="#002776"/>
+            </svg>
+            Canarinho<span class="star">&nbsp;5★</span>
+          </a>
+          <p>Projeto acadêmico sobre a Seleção Brasileira de Futebol — história, conquistas, ídolos e o manto mais famoso do esporte mundial.</p>
+        </div>
+        <div class="footer-nav">
+          <div>
+            <h5>Navegação</h5>
+            <ul>
+              <li><a href="index.html" data-testid="footer-link-inicio">Início</a></li>
+              <li><a href="historia.html" data-testid="footer-link-historia">História</a></li>
+              <li><a href="copas.html" data-testid="footer-link-copas">As 5 Copas</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>Acervo</h5>
+            <ul>
+              <li><a href="idolos.html" data-testid="footer-link-idolos">Ídolos</a></li>
+              <li><a href="estatisticas.html" data-testid="footer-link-estatisticas">Títulos &amp; Stats</a></li>
+              <li><a href="uniformes.html" data-testid="footer-link-uniformes">Uniformes</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>Canarinho 5★ · Projeto de Faculdade · 2026</span>
+        <span>Feito com HTML · CSS · JavaScript</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="main.js"></script>
+  <script>
+    (function () {
+      var list = document.getElementById('idols-list');
+      var buttons = document.querySelectorAll('.sort-btn');
+      buttons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          buttons.forEach(function (b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+          var order = btn.getAttribute('data-order');
+          var cards = Array.prototype.slice.call(list.querySelectorAll('.idol-card'));
+          cards.sort(function (a, b) {
+            var ra = parseInt(a.getAttribute('data-rank'), 10);
+            var rb = parseInt(b.getAttribute('data-rank'), 10);
+            return order === 'desc' ? ra - rb : rb - ra;
+          });
+          cards.forEach(function (card, i) {
+            card.style.transition = 'opacity .3s ease, transform .3s ease';
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(12px)';
+            list.appendChild(card);
+            setTimeout(function () {
+              card.style.opacity = '1';
+              card.style.transform = 'translateY(0)';
+            }, 60 + i * 45);
+          });
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
